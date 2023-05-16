@@ -6,6 +6,36 @@ public class Main {
 
     }
 
+    public static void main12(String[] args) {
+        // 字符串转数字
+        String s = "1234";
+        int a = Integer.valueOf(s);
+        System.out.println(a);
+
+        // 数字转字符串
+        double d = 20.5;
+        String sd = String.valueOf(d);
+        System.out.println(sd);
+    }
+
+    public static void main11(String[] args) {
+        // 输出abc = 1020
+        // 顺序从左至右，只要有一边是string类型，那么整体就是string类型
+        // string + 数字 = string，并且是单纯的拼接
+        System.out.println("abc = " + 10 + 20);
+    }
+
+    public static void main10(String[] args) {
+        /*
+        * Java中的逻辑值只有true和false，所以和C/C++不一样
+        * 因此逻辑值只能用于if这类的语句中，不能进行计算
+        */
+        int a = 10;
+        int b = 20;
+        // a && b + 1; // 非法
+
+    }
+
     public static void main9(String[] args) {
 //        int a = 10;
 //        long b = 20L;
