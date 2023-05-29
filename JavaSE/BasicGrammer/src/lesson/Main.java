@@ -1,4 +1,4 @@
-package lesson1;
+package lesson;
 
 public class Main {
 
@@ -27,9 +27,9 @@ public class Main {
 
     public static void main10(String[] args) {
         /*
-        * Java中的逻辑值只有true和false，所以和C/C++不一样
-        * 因此逻辑值只能用于if这类的语句中，不能进行计算
-        */
+         * Java中的逻辑值只有true和false，所以和C/C++不一样
+         * 因此逻辑值只能用于if这类的语句中，不能进行计算
+         */
         int a = 10;
         int b = 20;
         // a && b + 1; // 非法
