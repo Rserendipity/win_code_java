@@ -1,16 +1,13 @@
 package item.BookSystem.operate;
 
-/**
- * @projectName: BasicGrammer
- * @package: item.BookSystem.operate
- * @className: showOperate
- * @author: cjj
- * @description: TODO
- * @date: 2023/6/8 19:34
- */
+import item.BookSystem.book.BookList;
+
 public class showOperate implements IOperate {
     @Override
-    public void work() {
-        System.out.println("show book");
+    public void work(BookList bookList) {
+        // System.out.println("show book");
+        for (int i = 0; i < bookList.getIndex(); i++) {
+            System.out.println(bookList.getBook(i));
+        }
     }
 }

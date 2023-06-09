@@ -1,16 +1,10 @@
 package item.BookSystem.operate;
 
-/**
- * @projectName: BasicGrammer
- * @package: item.BookSystem.operate
- * @className: delOperate
- * @author: cjj
- * @description: TODO
- * @date: 2023/6/8 19:29
- */
+import item.BookSystem.book.BookList;
+
 public class delOperate implements IOperate {
     @Override
-    public void work() {
+    public void work(BookList bookList) {
         System.out.println("del book");
     }
 }

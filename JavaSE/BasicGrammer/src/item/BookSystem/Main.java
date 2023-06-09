@@ -1,5 +1,6 @@
 package item.BookSystem;
 
+import item.BookSystem.book.BookList;
 import item.BookSystem.user.AdminUser;
 import item.BookSystem.user.NormalUser;
 import item.BookSystem.user.User;
@@ -22,7 +23,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        BookList bookList = new BookList();
         User user = login();
-        int choice = user.menu();
+        while (true) {
+            int choice = user.menu();
+            user.doWork(choice, bookList);
+        }
     }
 }
