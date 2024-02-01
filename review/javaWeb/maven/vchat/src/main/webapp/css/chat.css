@@ -1,0 +1,317 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearFloat:after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+/* 修改滚动条样式 */
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: rgb(235, 233, 231);
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: rgb(210, 210, 210);
+    border-radius: 5px;
+}
+
+.box {
+    /* 页面居中显示 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 弹性布局 */
+    display: flex;
+    width: 90%;
+    height: 90%;
+    min-width: 800px;
+    min-height: 600px;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.bar {
+    height: 100%;
+    width: 3%;
+    min-width: 50px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    background-color: rgb(46, 46, 46);
+}
+
+.bar img {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.friend {
+    height: 100%;
+    width: 27%;
+    min-width: 250px;
+    background-color: rgba(247, 247, 247);
+    border-right: 1px rgb(231, 231, 231) solid;
+}
+
+
+.friend .top {
+    width: 100%;
+    height: 10%;
+    padding: 0px 3%;
+    display: flex;
+    align-items: center;
+}
+
+.friend .top input {
+    padding: 2% 2%;
+    width: 100%;
+    margin-right: 3%;
+    color: grey;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.friend .top input:focus {
+    background-color: white;
+}
+
+.friend .top button {
+    width: 8%;
+    font-size: 20px;
+    padding: 1%;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+}
+
+.friend .top button:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+
+
+.friend .list {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 90%;
+    background-color: rgb(230, 229, 229);
+}
+
+.people {
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 233, 231);
+}
+
+#chosen {
+    background-color: rgb(198, 196, 196);
+}
+
+#chosen:hover {
+    background-color: rgb(198, 196, 196);
+}
+
+.people:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.people img {
+    width: 12%;
+    margin-right: 3%;
+}
+
+.people .content {
+    position: relative;
+    width: 100%;
+}
+
+.people .content span {
+    font-size: 16px;
+}
+
+.people .content p {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    padding: 1% 0px;
+
+}
+
+.people .content .time {
+    position: absolute;
+    right: 0%;
+    color: rgb(153, 153, 153);
+}
+
+
+.main {
+    height: 100%;
+    width: 70%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    background-color: rgb(245, 245, 245);
+}
+
+.main .name {
+    position: relative;
+    height: 10%;
+    padding-left: 1.5%;
+    border-bottom: 1px rgb(231, 231, 231) solid;
+}
+
+.main .name p {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .name button {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    font-size: 20px;
+    padding: 3px 15px;
+
+    border: none;
+    outline: none;
+    border-top-right-radius: 15px;
+}
+
+.main .name button:hover {
+    color: white;
+    background-color: rgb(196, 43, 28);
+}
+
+.chat {
+    height: 65%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px rgb(231, 231, 231) solid;
+}
+
+.chat li {
+    display: flex;
+    padding: 5px;
+}
+
+.chat img {
+    width: 40px;
+    height: 40px;
+}
+
+.chat .me p {
+    max-width: 60%;
+    margin-left: auto;
+    background-color: rgb(149, 236, 105);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat .me div {
+    margin-top: 0.7%;
+    height: 1%;
+    border: 1vh rgb(245, 245, 245) solid;
+    border-left: 1vh rgb(149, 236, 105) solid;
+}
+
+.chat .me img {
+    margin-right: 20px;
+}
+
+.chat .other div {
+
+    margin-top: 0.7%;
+    height: 1%;
+    border: 1vh rgb(245, 245, 245) solid;
+    border-right: 1vh rgb(255, 255, 255) solid;
+}
+
+.chat .other p {
+    max-width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat .other img {
+    margin-left: 20px;
+}
+
+.chat .me p:hover {
+    background-color: rgb(137, 217, 97);
+}
+
+.chat .other p:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.chat .me p:hover div {
+    border-left: 1vh rgb(137, 217, 97) solid;
+}
+
+.chat .other p:hover div {
+    border-right: 1vh rgb(235, 235, 235) solid;
+}
+
+
+.input {
+    height: 25%;
+    position: relative;
+    padding: 30px;
+}
+
+.input textarea {
+    display: block;
+    width: 100%;
+    height: 85%;
+    font-size: 20px;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.input button {
+    float: right;
+    font-size: 14px;
+    padding: 5px 30px;
+    color: rgb(7, 193, 96);
+
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+}
+
+.input button:hover {
+    background-color: rgb(210, 210, 210);
+}

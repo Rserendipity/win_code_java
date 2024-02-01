@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vChat</title>
+    <link rel="stylesheet" href="./css/chat.css">
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="bar">
+            <img src="./imgs/avatar.jpg" alt="">
+            <img src="./imgs/bar.png" alt="">
+        </div>
+
+        <div class="friend">
+            <div class="top">
+                <input type="text" placeholder="搜索以添加好友">
+                <button>+</button>
+            </div>
+            <div class="list scroll">
+                <ul>
+                    <!-- <li class="people" id="">
+                        <img src="./imgs/1.jpg">
+                        <div class="content">
+                            <span>李四</span>
+                            <span class="time">15:05</span>
+                            <p>一条信息</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="name">
+                <p>选择一个联系人开始聊天吧！</p>
+                <button>X</button>
+            </div>
+
+            <div class="chat scroll">
+                <ul>
+                    <!-- <li class="me">
+                        <p>
+                            短信息
+                        </p>
+                        <div class="icon"></div>
+                        <img src="./imgs/avatar.jpg" alt="">
+                    </li>
+
+                    <li class="me">
+                        <p>
+                            长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息长信息
+                        </p>
+                        <div class="icon"></div>
+                        <img src="./imgs/avatar.jpg" alt="">
+                    </li>
+
+                    <li class="other">
+                        <img src="./imgs/1.jpg" alt="">
+                        <div class="icon"></div>
+                        <p>
+                            other信息
+                        </p>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <div class="input">
+                <textarea class="scroll"></textarea>
+                <button onclick="sendMessage()">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/chat.js">
+    </script>
+    <script>
+        GET_allInfo();
+    </script>
+</body>
+
+</html>

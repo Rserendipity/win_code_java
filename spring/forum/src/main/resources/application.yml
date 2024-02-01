@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/forum
+    username: root
+    password: 123456
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+logging:
+  level:
+    root: info
+    com.cjj.forum: info
